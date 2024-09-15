@@ -1,0 +1,33 @@
+WHY DOES DATA TYPES MATTER.
+when we create a table we need to create a atleast one column and name the column defining the data type of the data 
+to be entered in that column.
+we define columns in a CREATE statement by including a name and a dataypte to let the sqlITE know the kind of data we will 
+be storing there. 
+these practice of explicitly decalring a type is known as typing.
+typing allows us to excesise some level of control over our data.
+it informs teh databse of the kind of data we paln to store in a column abut also restricts it.
+by typing we have the ability to perform all kinds of operations such as summation, multiplication ect.
+
+DATATYPES.
+-> different databse systems also have different datatypes available, which are important and useful to know whenever 
+you are dealing with those systems.
+ these are :    
+    1. NULL
+    2. TEXT
+    3. INTEGER
+    4. REAL
+    5. BLOB
+
+Null -> this represents no value like null in javascript or none in python.
+text -> any alphabetical characters which we ewant to represent as plain text. paragraph, name, email are texts, weight, heigh and age are however not.
+integer -> anythin we want to represent as a whole number. of its a number and contains no letter or special characters or decimal points then
+ we should stire it as an integer.
+  if we use it to perform math or create a comparison between rows in our databse, then we definatel want to store it as an integer.
+
+Real ->  anything thats a plain old decimal like 1.4  or 3.2342. SQLite will store decimals up to 15 characters long.
+in other database systems this si called 'double precision'
+
+NOTE that boolean values are stores as 
+     0 as false and 1 as true.
+
+also note that SQLite has a comlicated system of categorizing datatypes that involves storeage classes , type affinities and Datatypes.
